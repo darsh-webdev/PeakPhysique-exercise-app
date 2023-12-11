@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Stack } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 
 import Logo from "../assets/images/Logo.png";
 
@@ -16,7 +16,14 @@ const Navbar = () => {
       }}
       px="20px"
     >
-      <Link to="/">
+      <Link
+        to="/"
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
         <img
           src={Logo}
           alt="logo"
